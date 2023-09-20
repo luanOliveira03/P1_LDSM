@@ -1,0 +1,72 @@
+<div class="container text-center" style="background: rgb(207, 21, 21); ">
+    <div class="row">
+        <div class="col-1">
+            &nbsp;
+        </div>
+        <div class="p-3 mb-2 bg-warning text-dark">
+            <nav class="navbar navbar-dark bg-dark" data-bs-theme="dark">
+                <div class="container-fluid" style="background-color: rgb(148, 0, 0);">
+                    <a class="navbar-brand"   href="#">PROVA FATEC ZONA LESTE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
+                            <a class="nav-link" href="/consulta">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-1">
+            &nbsp;
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            &nbsp;
+        </div>
+        <div class="col bg-white">
+            &nbsp;
+        </div>
+        <div class="col-1">
+            &nbsp;
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            &nbsp;
+        </div>
+        <div class="col bg-warning" >
+            <p class="text-start fs-5">PROVA - LABORATÓRIO DE DESENVOLVIMENTO MULTIPLATAFORMA</p>
+            <p class="text-start fs-6">INSERÇÃO DE NOTAS NO SISTEMA.</p>
+            <p>
+                <form action="/cadastrar" method="POST">
+                    <div class="mb-3 text-start">
+                        <label class="form-label">Nome:</label>
+                        <input type="name" name="nome" class="form-control" id="nome" required placeholder="Digite seu nome">
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label class="form-label">RA:</label>
+                        <input type="ra" name="ra" class="form-control" id="ra" required placeholder="Digite seu RA (Somente número)">
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label class="form-label">NOTA:</label>
+                        <input type="nota" name="nota" class="form-control" id="nota" required placeholder="Digite sua nota (Somente número)">
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label class="form-label">Observação:</label>
+                        <textarea name="observacao" class="form-control" id="observacao" style="height: 100px" required placeholder="Digite uma observação sobre a prova"></textarea>
+                    </div>
+                    <div class="mb-3 text-start">
+                        <button type="submit" style="background-color: black;" class="btn btn-primary">Cadastrar</button>
+                    </div>
+                </form>
+            </p>
+        </div>
+        <div class="col-1">
+            &nbsp;
+        </div>
+    </div>
+</div>

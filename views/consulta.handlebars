@@ -1,0 +1,110 @@
+<div class="container text-center" style="background: rgb(171, 0, 0); ">
+    <div class="row">
+        <div class="col-1">
+            &nbsp;
+        </div>
+        <div class="p-3 mb-2 bg-warning text-dark">
+            <nav class="navbar navbar-dark bg-dark" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">PROVA FATEC ZONA LESTE</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="/">Cadastrar</a>
+                            <a class="nav-link" href="/consulta">Consultar</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-1">
+            &nbsp;
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            &nbsp;
+        </div>
+        <div class="col bg-white">
+            &nbsp;
+        </div>
+        <div class="col-1">
+            &nbsp;
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1">
+            &nbsp;
+        </div>
+        <div class="col bg-warning">
+            <p class="text-start fs-5">PROVA - LABORATÓRIO DE DESENVOLVIMENTO MULTIPLATAFORMA</p>
+            <p class="text-start fs-6">CONSULTA DE NOTAS DA AVALIAÇÃO</p>
+            <p>
+            <div class="container text-center">
+                <div class="row bg-black">
+                    <div class="col text-light">
+                        NOME
+                    </div>
+                    <div class="col text-light">
+                        RA
+                    </div>
+                    <div class="col text-light">
+                        NOTA
+                    </div>                    
+                    <div class="col text-light">
+                        OBSERVAÇÃO
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-light">
+                        &nbsp;
+                    </div>
+                    <div class="col text-light">
+                        &nbsp;
+                    </div>
+                    <div class="col text-light">
+                        &nbsp;
+                    </div>
+                    <div class="col text-light">
+                        &nbsp;
+                    </div>
+                    <div class="col text-light">
+                        &nbsp;
+                    </div>
+                    <div class="col text-light">
+                        &nbsp;
+                    </div>
+                </div>
+                {{#each post}}
+                    {{#dataValues}}
+                    <div class="row">
+                        <div class="col">
+                            {{NOME}}
+                        </div>
+                        <div class="col">
+                            {{RA}}
+                        </div>
+                        <div class="col">
+                            {{NOTA}}
+                        </div>
+                        <div class="col">
+                            {{observacao}}
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-danger"><a href="/excluir/{{id}}" style="color:inherit">Excluir</a></button>
+                        </div>
+                    </div>
+                    {{/dataValues}}
+                {{/each}}
+            </div>
+            </p>
+        </div>
+        <div class="col-1">
+            &nbsp;
+        </div>
+    </div>
+</div>
